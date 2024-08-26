@@ -1,0 +1,20 @@
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+.path {
+    stroke: #007bff;
+    stroke-width: 5;
+    fill: none;
+    animation: draw 2s ease-in-out forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0, 1000;
+    }
+    to {
+        stroke-dasharray: 1000, 0;
+    }
+}
